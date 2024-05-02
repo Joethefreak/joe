@@ -208,6 +208,8 @@ section {
 
 #hamburger-nav {
     display: none;
+    position: relative;
+    top: 0px;
   }
   
   .hamburger-menu {
