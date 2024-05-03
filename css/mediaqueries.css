@@ -23,7 +23,7 @@
     font-size: 2em;
   }
   .textall{
-    font-size: 6em;
+    font-size: 7em;
   }
   .prejoe{
     font-size: 2em;
@@ -70,7 +70,7 @@
     font-size: 0.95em;
   }
   #newdate{
-    top: 9em;
+    top: 13em;
 }
 }
 
@@ -82,7 +82,7 @@
     font-size: 1.5em;
   }
   .textall{
-    font-size: 5em;
+    font-size: 6em;
   }
 
   #home{
@@ -93,11 +93,8 @@
     margin-bottom: 2.5em;
   }
   #newdate{
-    top: 8em;
-    font-size: 1.8em;
-}
-#scle{
-  scale: 1.1;
+    top: 10.5em;
+    font-size: 1.4em;
 }
 }
 @media screen and (max-width: 750px) {
@@ -113,6 +110,9 @@
   .joemain{
     transform: translateY(8em);
   }
+  #clg{
+    font-size: 0.9em;
+  }
 }
 @media screen and (max-width: 1050px) {
   .joevent1{
@@ -124,16 +124,16 @@
     font-size: 2em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
   #about{
     height: 29em;
   }
   #clg{
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .textall{
     font-size: 3em;
-    transform: translateX(-0.5em);
+    transform: translateX(-1.1em);
   }
   .back{
     height: 30em;
@@ -153,8 +153,8 @@
     width: 21em;
 }
 #newdate{
-  top: 9em;
-  font-size: 1.2em;
+  top: 11em;
+  font-size: 1em;
   gap: 0.2em;
 }
 #scle{
@@ -200,7 +200,7 @@
 }
 @media screen and (max-width: 400px) {
   #clg{
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
   .textall{
     font-size: 2.9em;
@@ -222,4 +222,19 @@
   #clg2{
     font-size: 0.7em;
   }
+  .tap{
+    display: none;
+ }
+ .tap2{
+    display: flex;
+ }
+ #latestimg{
+  scale: 0.8;
+ }
+ #span2{
+  height: 1.5em;
+ }
+ #copybut{
+  display: none;
+ }
 }
