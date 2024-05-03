@@ -170,6 +170,23 @@ section {
     left: 0;
     transition: 0.5s ease;
  }
+ #phoneno{
+    color: #000000;
+    font-family: 'Varela Round', sans-serif;
+ }
+ .tap{
+    color: #fff;
+    font-family: "Finlandica", sans-serif;
+    font-size: 1.5em;
+    margin: 0px;
+ }
+ .tap2{
+    color: #fff;
+    font-family: "Finlandica", sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    display: none;
+ }
  .nav-scroll {
     background-color: rgba(0, 0, 0, 0.7); /* Color with opacity */
   }
@@ -292,7 +309,7 @@ body{
 #clg{
     font-family: "IM Fell DW Pica", serif;
     color: rgb(101, 253, 253);
-    font-size: 2.4em;
+    font-size: 2em;
     padding: 0em;
     margin: 0em;
 }
@@ -303,9 +320,9 @@ body{
     gap:  0.4em;
     transition: 2s;
     justify-content: center;
-    font-size: 2.1em;
+    font-size: 1.5em;
     position: absolute;
-    top: 11em;
+    top: 16em;
     opacity: 0;
 }
 #textdatejoe{
@@ -316,7 +333,6 @@ body{
     font-family: 'Nova Square', sans-serif;
 }
 #scle{
-    scale: 1.2;
     color: #00ffff;
 }
 #clg1{
@@ -348,6 +364,17 @@ body{
 }
 #mapp2{
     height: 35px;
+}
+#span2{
+    width: 1px;
+    height: 2em;
+    background-color: #fff;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
 }
 #clg2{
     font-family: "Poppins", sans-serif;
@@ -391,16 +418,17 @@ body{
 }
 .textall{
     color: #fdf745;
-    font-size: 7em;
+    font-size: 8em;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 0.05em;
+    gap: 0.2em;
     justify-content: space-evenly;
     text-shadow: 3px 3px 3px rgb(241, 0, 0);
     /* animation: joeani 1s ease-in;
     transition: 1s; */
     /* #00ffff */
+    transform: translateX(-0.5em);
     font-family: danger;
 }
 #aboutback{
@@ -538,7 +566,7 @@ html {
     -webkit-background-clip: text;
     background-clip:text;
     font-weight: 400;
-    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-size: 3em;
     font-style: normal; 
     color: #00ffff;
@@ -623,38 +651,38 @@ html {
     animation: textste 1s;
     z-index: 3;
     display: none;
-    transform: translate(-0.3em,0em);
+    /* transform: translate(-0.3em,0em); */
 }
 #textq{
     animation: textstq 1s;
     z-index: 3;
     display: none;
-    transform: translate(-0.4em,0em);
+    /* transform: translate(-0.4em,0em); */
 }
 #textu{
     animation: textstu 1s;
     z-index: 3;
     display: none;
-    transform: translate(-0.45em,0em);
+    /* transform: translate(-0.45em,0em); */
 }
 #texte2{
     animation: textstee 1s;
     z-index: 3;
     display: none;
-    transform: translate(-0.62em,0em);
+    /* transform: translate(-0.62em,0em); */
 }
 #texts{
     animation: textsts 1s;
     z-index: 3;
     display: none;
-    transform: translate(-0.9em,0em);
+    /* transform: translate(-0.9em,0em); */
 }
 #textt2{
     animation: textsttt 1s;
     z-index: 3;
     display: none;
-    width: 1em;
-    transform: translate(-0.9em,0em);
+    /* width: 1em;
+    transform: translate(-0.9em,0em); */
 }
 @keyframes textstb {
     0%{
@@ -735,7 +763,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.3em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
@@ -757,7 +785,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.4em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
@@ -779,7 +807,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.45em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
@@ -801,7 +829,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.62em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
@@ -823,7 +851,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.9em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
@@ -845,7 +873,7 @@ html {
     }
     75%{
         scale: 1;
-        transform: translate(-0.9em,0em);
+        transform: translate(0em,0em);
     }
     85%{
         transform: rotateY(180deg);
