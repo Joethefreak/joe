@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Square&family=EB+Garamond&family=PT+Mono&family=Poppins:wght@300&family=Quicksand:wght@500&family=Roboto:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap&family=Dancing+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Square&family=EB+Garamond&family=PT+Mono&family=Poppins:wght@300&family=Quicksand:wght@500&family=Roboto:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Parisienne&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap&family=IM+Fell+DW+Pica:ital@0;1&family=Parisienne&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>ByteQuest2024</title>
     <script>
         function toggleMenu() {
@@ -25,7 +25,9 @@
     <section id="home">
     <nav id="desktop-nav">
         <div class="logo">
-            <img src="images/acharyaw.png" alt="logo"  height="70">
+            <img src="images/acharyab.png" alt="logo"  id="logojoe" height="70">
+            <div id="span2"></div>
+            <img src="images/infinite.png" alt="logo"  height="70">
         </div>
     <div>
         <ul class="nav-links">
@@ -33,14 +35,15 @@
             <li style="padding: 0.2em;"><a href="#event">Events</a></li>
             <!-- <li style="padding: 0.2em;"><a href="#speakers">Speakers</a></li> -->
             <li style="padding: 0.2em;"><a href="#contact">Contact</a></li>
-            <li style="padding: 0.2em;"><a href="">Brochure</a></li>
             <li><a href="register.php"><button class="joereg">Register</button></a></li>
         </ul>
     </div>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">
-            <img src="images/acharyaw.png" alt="logo" width="55" height="60">
+            <img src="images/acharyab.png" alt="logo" id="latestimg" width="55" height="60">
+            <div id="span2"></div>
+            <img src="images/infinite.png" alt="logo" id="latestimg"  height="60">
         </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
@@ -71,7 +74,7 @@
         <span id="texty">y</span>
         <span id="textt">t</span>
         <span id="texte">e</span>
-        <span id="textq">Q</span>
+        <span id="textq">q</span>
         <span id="textu">u</span>
         <span id="texte2">e</span>
         <span id="texts">s</span>
@@ -109,6 +112,8 @@
 <section id="event">
 <div class="jio">  
   <h1 class="joevent">Events</h1>
+  <p class="tap">Hover over the card for more info</p>
+  <p class="tap2">Tap on the card for more info</p>
   <div class="box-container">
 	<div class="box-item">
     <div class="flip-box">
@@ -477,7 +482,7 @@
           <div><span class="material-symbols-outlined">
             call
             </span></div>
-        <h1>9945275655</h1>
+        <h1><a href="tel:9945275655" id="phoneno">9945275655</a></h1>
         <button onclick="copyf()" id="copybut"><span class="material-symbols-outlined" id="copy">
           content_copy
           </span>
@@ -498,7 +503,7 @@
           <div><span class="material-symbols-outlined">
             call
             </span></div>
-        <h1>9844515957</h1>
+        <h1><a href="tel:9844515957" id="phoneno">9844515957</a></h1>
         <button onclick="copyd()" id="copybut"><span class="material-symbols-outlined" id="copyd">
           content_copy
           </span>
@@ -524,7 +529,7 @@
           <div><span class="material-symbols-outlined">
             call
             </span></div>
-        <h1>7892980275</h1>
+        <h1><a href="tel:7892980275" id="phoneno">7892980275</a></h1>
         <button onclick="copyg()" id="copybut"><span class="material-symbols-outlined" id="copyg">
           content_copy
           </span>
@@ -545,7 +550,7 @@
           <div><span class="material-symbols-outlined">
             call
             </span></div>
-        <h1>6366161388</h1>
+        <h1><a href="tel:6366161388" id="phoneno">6366161388</a></h1>
         <button onclick="copyv()" id="copybut"><span class="material-symbols-outlined" id="copyv">
           content_copy
           </span>
