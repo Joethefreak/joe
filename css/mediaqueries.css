@@ -149,7 +149,7 @@
     font-size: 3.5em;
   }
   .newp{
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 21em;
 }
 #newdate{
@@ -175,9 +175,6 @@
 }
 .joeab{
   margin-left: 2em;
-}
-.newp{
-  font-size: 1em;
 }
 }
 @media screen and (max-width: 600px) {
