@@ -52,7 +52,8 @@
   }
   .joeab{
     gap: 0.3em;
-    left: 7em;
+    right: 50%;
+    transform: translateX(50%);
 }
   #aboutimg{
     left: -6em;
@@ -69,15 +70,15 @@
   #para{
     font-size: 0.95em;
   }
+  #para3{
+    font-size: 0.95em;
+  }
   #newdate{
     top: 13em;
 }
 }
 
 @media screen and (max-width: 850px) {
-  .joeab{
-    margin: 0px;
-  }
   #clg{
     font-size: 1.5em;
   }
@@ -149,7 +150,7 @@
     font-size: 3.5em;
   }
   .newp{
-    font-size: 1.05em;
+    font-size: 1.1em;
     width: 21em;
 }
 #newdate{
@@ -174,7 +175,10 @@
   font-size: 3em;
 }
 .joeab{
-  margin-left: 2em;
+  margin-top: 2em;
+}
+.newp{
+  font-size: 1em;
 }
 }
 @media screen and (max-width: 600px) {
@@ -224,6 +228,9 @@
  }
  .tap2{
     display: flex;
+ }
+ .tap3{
+  font-size: 1.3em;
  }
  #latestimg{
   scale: 0.75;
