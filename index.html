@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <link rel="stylesheet" href="css/clg.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap&family=Dancing+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Square&family=EB+Garamond&family=PT+Mono&family=Poppins:wght@300&family=Quicksand:wght@500&family=Roboto:ital,wght@1,300&family=Sacramento&display=swap" rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap&family=IM+Fell+DW+Pica:ital@0;1&family=Parisienne&display=swap&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>ByteQuest2024</title>
     <script>
@@ -35,6 +34,7 @@
             <li style="padding: 0.2em;"><a href="#event">Events</a></li>
             <!-- <li style="padding: 0.2em;"><a href="#speakers">Speakers</a></li> -->
             <li style="padding: 0.2em;"><a href="#contact">Contact</a></li>
+            <li style="padding: 0.2em;"><a onclick="downloadPDF()">Brochure</a></li>
             <li><a href="register.php"><button class="joereg">Register</button></a></li>
         </ul>
     </div>
@@ -54,7 +54,8 @@
           <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#event" onclick="toggleMenu()">Events</a></li>
-            <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a onclick="toggleMenu();downloadPDF();">Brochure</a></li>
             <li><a href="register.php" onclick="toggleMenu()">Register</a></li>
           </div>
         </div>
@@ -63,7 +64,6 @@
 
 <div class="joemain">
 <div class="logo1">
-	<marquee behavior="scroll" direction="left" style="color:white;">Notice: Alumini meet is scheduled on 11/05/2024</marquee>
     <!-- <img src="acharyaw.png" alt="logo" class="logo" height="140"> -->
     <h1 id="clg">ACHARYA &nbsp INSTITUTE &nbsp OF &nbsp GRADUATE &nbsp STUDIES</h1>
     <h1 id="clg">Department &nbsp Of &nbsp MCA</h1>
@@ -142,9 +142,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Bit By Bit</h3>
-          <p id="para">Participants are allotted 15 minutes to deliver a precentation on a technology topic relevent to the latest trends in the IT field.</p>
-          <p id="para">Precentation should be engaging, informative and adhere to the time limit.</p>
-          <p id="para">Judging criteria include content quality, delivery, and audience engagement.</p>
+          <p id="para">• 15-minute presentation on a trending IT topic provided on spot.</p>
+          <p id="para">• Engage the audience with informative content within the time limit.</p>
+          <p id="para">• Judging is based on content quality, delivery, and audience engagement.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Dr. P. Logeshwari : <a href="tel:9788329897" id="phoneno">9788329897</a></p>
+          <p id="para">Pavan AV : <a href="tel:6361383275" id="phoneno">6361383275</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -181,9 +186,13 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Code Fusion</h3>
-          <p id="para">Teams comprising 2 participants collaborate to devise a software solution within 2-3 hour timeframe.</p>
-          <p id="para">Projects should address a specific problem statement or theme provided by the organizers.</p>
-          <p id="para">Submissions will be assessed on the criteria including creativity, technical execution, user experience, and potential for future development.</p>
+          <p id="para">• The participant teams create software solutions for a given problem within 2-3 hours.</p>
+          <p id="para">• Judged on creativity, technical execution, user experience, and future potential.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para3"> Prof. Narasimhamurthy GK: <a href="tel:9743761021" id="phoneno">9743761021</a></p>
+          <p id="para">Deepu : <a href="tel:8050341817" id="phoneno">8050341817</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -216,9 +225,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Pixel Battle</h3>
-          <p id="para">Multiple gaming titles will be featured, such as BGMI.</p>
-          <p id="para">Slots for the tournament are limited.</p>
-          <p id="para">Toumament format and rules will be announced prior to the event.</p>
+          <p id="para">• Team-based gaming tournament featuring titles like BGMI.</p>
+          <p id="para">• Tournament format and rules will be announced prior to the event.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Prof. Nagaraju M L : <a href="tel:9448020214" id="phoneno">9448020214</a></p>
+          <p id="para">Pramodh : <a href="tel:6364541982" id="phoneno">6364541982</a></p>
+          <p id="para">Purushotham : <a href="tel:9108433970" id="phoneno">9108433970</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -255,9 +269,13 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Tech Titans</h3>
-          <p id="para">Teams of 4 participants engage in a structured debate on a given technology related topic.</p>
-          <p id="para">Each team will have the opportunity to present their arguments and rebut the opposing team.</p>
-          <p id="para">Judging criteria include logical reasoning, evidence-based arguments, and effective communication.</p>
+          <p id="para">• The participant teams debate a technology related topic, presenting arguments and rebuttals.</p>
+          <p id="para">• Judged on logical reasoning, evidence, and communication. </p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Dr. B. Manimekhala : <a href="tel:9894362455" id="phoneno">9894362455</a></p>
+          <p id="para">Anik : <a href="tel:7679951043" id="phoneno">7679951043</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -294,9 +312,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Lenses & Lines</h3>
-          <p id="para">Teams are given a theme to create a 2 minute original video during the event.</p>
-          <p id="para">Only self-created content is allowed, no pre-recorded or copyrighted material.</p>
-          <p id="para">Use any gadgets for editing, ensuring creativity, relevance, and no offensive content.</p>
+          <p id="para">• Create a 2-minute original video on a given theme using any gadgets for editing.</p>
+          <p id="para">• No pre-recorded or copyrighted material allowed.</p>
+          <p id="para">• Judged on creativity, relevance, and content.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Prof. Rajesh Rao K : <a href="tel:9945976624" id="phoneno">9945976624</a></p>
+          <p id="para">Neelam : <a href="tel:9353859505" id="phoneno">9353859505</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -333,9 +356,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Quizbytes</h3>
-          <p id="para">A team-based quiz competition testing participants knowledge of programming, and general technology.</p>
-          <p id="para">Questions will span multiple difficulty levels and cover a wide range of topics.</p>
-          <p id="para">The team with the highest score at the end of the quiz wins.</p>
+          <p id="para">• Team-based quiz on programming and general technology.</p>
+          <p id="para">• Multiple difficulty levels.</p>
+          <p id="para">• Highest score wins.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Prof. Vivek K : <a href="tel:9980446414" id="phoneno">9980446414</a></p>
+          <p id="para">Anandhi : <a href="tel:8431506148" id="phoneno">8431506148</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -372,9 +400,13 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Artbits</h3>
-          <p id="para">Participarits create digital posters on a given technology related theme using graphic design tools.</p>
-          <p id="para">Posters will be judged on creativity, visual impact, and adherence to the theme.</p>
-          <p id="para">Submissions should be original and not infringe upon any copyrights.</p>
+          <p id="para">• Create original digital posters on a technology theme using graphic design tools.</p>
+          <p id="para">• Posters will be judged on creativity, visual impact, and adherence to the theme.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Prof. Farzeen Basith : <a href="tel:9945275655" id="phoneno">9945275655</a></p>
+          <p id="para">Manoj : <a href="tel:9108107956" id="phoneno">9108107956</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -411,9 +443,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Idea Ignite</h3>
-          <p id="para">Participants pitch innovative technology based solutions to real world problems.</p>
-          <p id="para">Ideas will be judged on originality, feasibility, and potential impact.</p>
-          <p id="para">The best ideas will be selected for further development or incubation or research paper.</p>
+          <p id="para">• Pitch innovative tech solutions to real-world problems.</p>
+          <p id="para">• Ideas will be judged on originality, feasibility, and potential impact.</p>
+          <p id="para">• The best ideas will be selected for further development, incubation, or research paper.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Dr. A R Deepthi : <a href="tel:9844515957" id="phoneno">9844515957</a></p>
+          <p id="para">Prajwal : <a href="tel:6362631325" id="phoneno">6362631325</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -446,9 +483,14 @@
       <div class="flip-box-back text-center">
         <div class="inner color-white">
           <h3 class="flip-box-header2">Cipher Escape</h3>
-          <p id="para">Pairs of participants work together to solve a range of technology-themed puzzles and challenges within a virtual room to achieve an "escape".</p>
-          <p id="para">The fastest team to complete all challenges and escape wins.</p>
-          <p id="para">Challenges may include cryptography, coding, and logical reasoning.</p>
+          <p id="para">• Pairs solve technology-themed puzzles and challenges within a virtual room to "escape".</p>
+          <p id="para">• Fastest team wins.</p>
+          <p id="para">• Challenges include cryptography, coding, and logical reasoning.</p>
+          <div id="again">
+          <p id="para" class="para2">Coordinators</p>
+          <p id="para">Dr. M Balamurugan : <a href="tel:9655741471" id="phoneno">9655741471</a></p>
+          <p id="para">Sirisha : <a href="tel:8431178989" id="phoneno">8431178989</a></p>
+          </div>
           <button class="cssbuttons-io" onclick="window.location.href='register.php'">
             <span>
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -459,6 +501,17 @@
       </div>
     </div>
 	</div>
+  <div id="brochure">
+  <p class="tap3">Checkout the brochure for more details</p>
+
+  <button class="download-button" onclick="downloadPDF()">
+  <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg>Download Brochure</div>
+  <div class="download">
+    <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
+  </div>
+</button>
+
+</div>
 </section>
 
 <!-- <section id="speakers">
@@ -581,6 +634,19 @@
     </div>
   </div>
 </section>
+
+
+<script>
+        function downloadPDF() {
+            var pdfURL = 'brochure.pdf';
+            var a = document.createElement('a');
+            a.href = pdfURL;
+            a.download = 'Acharya_ByteQuest_2024_Brochure.pdf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+</script>
 
 
 <script>
